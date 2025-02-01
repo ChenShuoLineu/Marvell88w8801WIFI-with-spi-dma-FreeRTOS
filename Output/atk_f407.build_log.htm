@@ -28,12 +28,21 @@ Project File Date:  01/29/2025
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'lwIP'
 Note: source file '..\..\Middlewares\LWIP\src\core\sys.c' - object file renamed from '..\..\Output\sys.o' to '..\..\Output\sys_1.o'.
-compiling spi_sdio.c...
+compiling wifi_app.c...
+..\..\Drivers\BSP\WIFI88W8801\wifi_app.c(107): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "uint8_t *"
+  					wifi_connect_ap(ssid,8,key,9);// 如果收到了就进行连接
+..\..\Drivers\BSP\WIFI88W8801\wifi_app.c(107): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "uint8_t *"
+  					wifi_connect_ap(ssid,8,key,9);// 如果收到了就进行连接
+..\..\Drivers\BSP\WIFI88W8801\wifi_app.c: 2 warnings, 0 errors
+compiling ethernetif.c...
+compiling freertos_demo.c...
+compiling main.c...
+compiling lwip_demo.c...
 linking...
 Program Size: Code=87088 RO-data=3636 RW-data=868 ZI-data=923548  
 FromELF: creating hex file...
 After Build - User command #1: fromelf --bin -o ..\..\Output\atk_f407.bin ..\..\Output\atk_f407.axf
-"..\..\Output\atk_f407.axf" - 0 Error(s), 0 Warning(s).
+"..\..\Output\atk_f407.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -46,7 +55,7 @@ Package Vendor: Keil
   D:/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:09
+Build Time Elapsed:  00:00:12
 </pre>
 </body>
 </html>

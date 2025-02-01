@@ -24,7 +24,7 @@
 #include "./MALLOC/malloc.h"
 
 // 0:²âËÙ 1:¿Í»§¶Ë 2:»¥ping
-#define LWIP_TASK_TYPE  0
+#define LWIP_TASK_TYPE  2
 
 
 void lwip_demo_init(uint8_t task_type);
